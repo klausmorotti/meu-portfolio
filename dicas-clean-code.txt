@@ -1,0 +1,19 @@
+APRENDIZADOS PROJETO:
+
+- atributo title no link a
+- tags semânticas
+- padronizar tamanhos de fontes
+- utilizar reset normalize
+- usar variáveis de armazenameneto css
+- classes reutilizaveis
+- Aplicar hover azul nos botões do menu, nos botões de contato e ao clicar nos campos do formulário
+- Ao abrir a página, adicionar efeito sutil para aparecer a estrutura
+- Copiar efeitos de aparição do site B7web
+- efeito parallax de rolagem, banner ficar fixo
+- Criar validação JS no formulário
+- Criar email profissional e alterar no projeto
+- Trocar foto
+- Ao clicar nos campos do formulário, ficar borda azul 
+- Responsivizar
+- Clean code
+
