@@ -19,11 +19,8 @@
     --h3-font-size:35px;
     --h4-font-size:30px;
     --h5-font-size:25px;
+    --p-font-size:20px;
     --h6-font-size:18px;
-    --big-font-size:40px;
-    --normal-font-size:25px;
-    --p-font-size:18px;
-    --small-font-size:15px;
     --btn-font-size:16px;
 
     /* Font-weight */
@@ -55,9 +52,11 @@ body {
     background-color: var(--bg-page);
     color: var(--color-fonts);
     font-family:'Aleo';
+    font-weight:100;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family:'Lato';
+    font-weight:400;
 }
 h1 {
     font-size: var(--h1-font-size);
@@ -70,6 +69,7 @@ h2 {
 h3 {
     font-size: var(--h3-font-size);
     color: var(--color-title-gray);
+    text-align:center;
 }
 h4 {
     font-size: var(--h4-font-size);
@@ -77,20 +77,20 @@ h4 {
 h5 {
     font-size: var(--h5-font-size);
     color: var(--color-title-blue);
+    text-align:center;
+    margin-bottom:50px;
     letter-spacing:5px;
 }
 h6 { 
     font-size: var(--h6-font-size);
     color: var(--color-title-blue);
-}
-p,
-span {
-    font-weight: var(--weight-regular);
+    text-transform:uppercase;
 }
 a {
     font-family:'Lato';
     text-decoration:none;
     color:#F5F5F5;
+    font-weight:400;
 }
 .button {
     font-size: var(--btn-font-size);
@@ -101,6 +101,7 @@ a {
     padding:15px 0;
     border:1px solid var(--color-fonts);
     border-radius:20px;
+    text-transform:uppercase;
 }
 .button:hover {
     color: var(--color-title-blue);
@@ -111,12 +112,6 @@ a {
 /* Reusable css classes */
 section {
     padding:50px;
-}
-section h3 {
-    font-size:25px;
-    text-align:center;
-    margin-bottom:50px;
-    letter-spacing:5px;
 }
 .container {
     margin:auto;
@@ -151,13 +146,11 @@ header .logo-area img {
 header .name-logo {
     margin-left:10px;
 }
-header .name-logo .name {
-    font-family:'Lato';
-    font-size:30px;
+header .name-logo h4 {
+    font-size: var(--h4-font-size);
 }
-header .name-logo .occupation {
-    font-family:'Aleo';
-    font-size:14px;
+header .name-logo p {
+    font-size: var(--btn-font-size);
 }
 header .menu ul {
     list-style:none;
@@ -184,9 +177,9 @@ header .menu a:hover {
     align-items:center;
 }  
 .banner-opacity .apresentation p {
+    font-family:'Aleo';
     font-size: 30px;
     text-align:center;
-    font-family:'Aleo';
     font-weight:100;
 }
 .apresentation h2 {
@@ -220,7 +213,7 @@ article .resume p {
     font-size: var(--normal-font-size);
     font-weight:100;
     line-height:50px;
-    font-size:30px;
+    font-size: var(--h4-font-size);
     margin:50px 0;
 } 
 article .resume img {
@@ -240,17 +233,13 @@ article .area-info {
     border-radius:30px;
     padding:30px;
 }
-article .title-info {
-    font-family:'Lato';
-    text-transform:uppercase;
-    font-size: var(--p-font-size);
-    color: var(--color-title-blue);
-    font-weight:700;
+article h6 {
     margin-bottom:5px;
 }
 article .info {
-    font-size: var(--p-font-size);
+    font-size: var(--h6-font-size);
     margin-bottom:30px;
+    font-weight:100;
 }
 article .info:last-child {
     margin-bottom:0;
@@ -262,9 +251,8 @@ article .area-info img {
     max-width:30px;
     margin:0 10px;
 }
-
 article .about-me p {
-    font-size: var(--normal-font-size);
+    font-size: var(--h5-font-size);
     margin-bottom:50px;
     font-weight:100;
     line-height:50px;
@@ -286,14 +274,25 @@ article .about-me p {
 .differential img {
     max-width:100px;
 }
+.differentials .differential h4 {
+    margin:10px 0 30px 0;
+}
+.differentials .differential p {
+    font-size: var(--p-font-size);
+    text-align:center;
+    font-weight:100;
+}
 
 /* PORTFOLIO */
-.area-portfolio h2 {
-    font-size:35px;
+.area-portfolio h3 {
     margin-bottom:100px;
 }
-.area-portfolio h3 {
+.area-portfolio h5 {
     margin-bottom:10px;
+}
+.area-portfolio .portfolio h2 {
+    text-transform:uppercase;
+    color: var(--color-title-gray);
 }
 .portfolio {
     display:grid;
@@ -315,11 +314,10 @@ article .about-me p {
 }
 .desc-project .name-project {
     font-size:50px;
-    font-family:'Lato';
     color: var(--color-title-gray);
     margin-bottom:20px;
 }
-.desc-project .desc {
+.desc-project p {
     font-size:25px;
     font-weight:100;
     line-height:50px;
@@ -356,6 +354,16 @@ article .about-me p {
 .container .service img {
     max-width:120px;
 }
+.container .service h4 {
+    margin:20px 0 40px 0;
+}
+.container .service p {
+    font-size: var(--p-font-size);
+    text-align:center;
+    font-weight:100;
+}
+
+
 
 
 /* CONTACT */
@@ -364,9 +372,6 @@ article .about-me p {
     flex-direction:column;
     justify-content:center;
     align-items:center;
-}
-.contact .container h2 {
-    font-size:35px;
 }
 .contact .container form {
     display:flex;
@@ -417,15 +422,18 @@ article .about-me p {
     justify-content:center;
     align-items:center;
 }
+.more-contacts .contact h6 {
+    margin:20px 0 20px 0;
+}
 .more-contacts .contact .desc-image {
     margin-top:20px;
     margin-bottom:30px;
-    font-family:'Lato';
     color: var(--color-title-blue);
     font-weight:700;
     letter-spacing:2px;
 }
 .more-contacts .contact p {
+    font-size: var(--btn-font-size);
     text-align:center;
     font-weight:400;
 }
@@ -447,8 +455,9 @@ footer .copyright {
     display:flex;
 }
 footer .copyright p {
-    font-family:'Aleo';
-    font-size:18px;
+    font-size: var(--btn-font-size);
+    font-weight:400;
+    letter-spacing:1px;
 }
 footer .copyright img {
     width:20px;
