@@ -156,6 +156,9 @@ header nav ul {
     list-style:none;
     display:flex;
 }
+header nav ul li:first-child {
+    display:none;
+}
 header nav li {
     margin:0 10px;
     padding:10px;
@@ -475,7 +478,7 @@ footer .contacts img {
         opacity:0;
         background-color:rgba(0, 0, 0, 0.8);
         position:absolute;
-        top:0px;
+        top:10px;
         right:0;
         width:30vw;
     }
@@ -487,6 +490,12 @@ footer .contacts img {
     header nav li {
         margin:0 10px;
         padding:20px 10px;
+    }
+    header nav ul li:first-child {
+        display:block;
+    }
+    header nav li img {
+        max-width:30px;
     }
     header nav a {
         color:  var(--color-title-blue);
@@ -632,6 +641,47 @@ footer .contacts img {
         margin-bottom:100px;
     }
 
+    /* About me */
+    #about-me .container .container-grid {
+        grid-template-columns:repeat(1, 100px 1fr);
+        grid-template-areas:
+        'item1 item1 item1 item1 item2 item2 item2 item2'
+        'item3 item3 item3 item3 item3 item3 item3 item3'
+        'item4 item4 item4 item4 item4 item4 item4 item4'
+        ;
+    }
+    #about-me .container .resume.item1 {
+        grid-area:item1;
+    }
+    #about-me article .resume h1 {
+        font-size: var(--h2-font-size);
+        line-height:60px;
+    }
+    #about-me article .resume p {
+        font-size: var(--btn-font-size);
+        line-height: var(--h4-font-size);
+    }
+    #about-me article .resume .button {
+        font-size:12px;
+    }
+    #about-me .container .profile-picture.item2 {
+        grid-area:item2;
+    }
+    #about-me .container .informations.item3 {
+        
+        grid-area:item3;
+    }
+    #about-me .container .informations.item3 h6 {
+        font-size: var(--h5-font-size);
+    }
+    #about-me .container .informations.item3 p {
+        font-size: var(--h5-font-size);
+    }
+    #about-me .container .about.item4 {
+        grid-area:item4;
+        text-align:center;
+    }
+
     /* Contact */
     .more-contacts .contact img {
         max-width:50px;
@@ -663,14 +713,18 @@ footer .contacts img {
         max-width: 40px;
         margin: 0 15px;
     }
+    
+
     /* About me */
     #about-me .container .container-grid {
-        grid-template-columns:repeat(1, 100px 1fr);
+        grid-template-columns:repeat(1, 1fr);
         grid-template-areas:
-        'item1 item1 item1 item1 item2 item2 item2 item2'
-        'item3 item3 item3 item3 item3 item3 item3 item3'
-        'item4 item4 item4 item4 item4 item4 item4 item4'
+        'item2 item2 item2 item2'
+        'item1 item1 item1 item1'
+        'item3 item3 item3 item3'
+        'item4 item4 item4 item4'
         ;
+        gap:60px 0;
     }
     #about-me .container .resume.item1 {
         grid-area:item1;
@@ -678,27 +732,41 @@ footer .contacts img {
     #about-me article .resume h1 {
         font-size: var(--h2-font-size);
         line-height:60px;
+        text-align:center;
     }
     #about-me article .resume p {
+        margin:auto;
+        margin-top:30px;
+        margin-bottom:30px;
         font-size: var(--btn-font-size);
         line-height:25px;
+        text-align:center;
+        max-width:400px;
     }
     #about-me .container .profile-picture.item2 {
         grid-area:item2;
+        width:150px;
+        border-radius:50%;
+        margin:auto;
+    }
+    #about-me .container .profile-picture.item2 img {
+        border-radius:50%;
     }
     #about-me .container .informations.item3 {
-        
         grid-area:item3;
     }
     #about-me .container .informations.item3 h6 {
-        font-size: var(--h5-font-size);
+        font-size: var(--h6-font-size);
     }
     #about-me .container .informations.item3 p {
-        font-size: var(--h5-font-size);
+        font-size: var(--h6-font-size);
     }
     #about-me .container .about.item4 {
         grid-area:item4;
         text-align:center;
+    }
+    #about-me .container .about.item4 p {
+        font-size: var(--h6-font-size);
     }
 
     /* Differentials */ 
@@ -781,55 +849,7 @@ footer .contacts img {
         max-width:30px;
     }
 
-    /* About me */
-    #about-me .container .container-grid {
-        grid-template-columns:repeat(1, 1fr);
-        grid-template-areas:
-        'item2 item2 item2 item2'
-        'item1 item1 item1 item1'
-        'item3 item3 item3 item3'
-        'item4 item4 item4 item4'
-        ;
-        gap:60px 0;
-    }
-    #about-me .container .resume.item1 {
-        grid-area:item1;
-    }
-    #about-me article .resume h1 {
-        font-size: var(--h2-font-size);
-        line-height:60px;
-        text-align:center;
-    }
-    #about-me article .resume p {
-        font-size: var(--btn-font-size);
-        line-height:25px;
-        text-align:center;
-    }
-    #about-me .container .profile-picture.item2 {
-        grid-area:item2;
-        width:150px;
-        border-radius:50%;
-        margin:auto;
-    }
-    #about-me .container .profile-picture.item2 img {
-        border-radius:50%;
-    }
-    #about-me .container .informations.item3 {
-        grid-area:item3;
-    }
-    #about-me .container .informations.item3 h6 {
-        font-size: var(--btn-font-size);
-    }
-    #about-me .container .informations.item3 p {
-        font-size: var(--btn-font-size);
-    }
-    #about-me .container .about.item4 {
-        grid-area:item4;
-        text-align:center;
-    }
-    #about-me .container .about.item4 p {
-        font-size: var(--h6-font-size);
-    }
+    
 
     /* Portfolio */
     #portfolio  .container-grid {

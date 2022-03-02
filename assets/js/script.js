@@ -21,7 +21,7 @@ document.querySelectorAll('#portfolio .button, #contact .button').forEach((item)
 document.querySelector('.menu-hamb').addEventListener('click', () => {
     document.querySelector('.menu-hamb').style.opacity = 0;
     setTimeout(() => {
-        document.querySelector('.menu-hamb').style.display = 'block'
+        document.querySelector('.menu-hamb').style.display = 'none';
         document.querySelector('header nav').style.opacity = 1;
     }, 200)
     document.querySelector('header nav').style.display = 'block';
