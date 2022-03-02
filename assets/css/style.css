@@ -848,11 +848,12 @@ footer .contacts img {
     }
     #contact .container form input,
     #contact .container form textarea {
-        font-size: var(--p-font-size);
+        font-size: var(--h6-font-size);
+        width:100%;
     }
     #contact .container form input::placeholder,
     #contact .container form textarea::placeholder {
-        font-size: var(--p-font-size);
+        font-size: var(--h6-font-size);
     }
 
     /* Footer */
