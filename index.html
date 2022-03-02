@@ -10,44 +10,43 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
+<body onload="smoothEffect()">
 
     <!--BANNER PRINCIPAL-->
-    <div class="banner">
+    <div id="banner">
         <div class="banner-opacity">
-
             <header>
                 <div class="logo-area">
-                    <a href=""><img src="assets/images/code.png" alt="Logo Code"></a>
-                    <div class="name-logo">
+                    <a href="#banner" title="Logo Portfolio"><img src="assets/images/code.png" alt="Logo Portfolio"></a>
+                    <div class="area-name">
                         <h4>KLAUS</h4>
                         <p>Desenvolvedor Web e <br> UX/UI Designer</p>
                     </div>
                 </div>
 
-                <nav class="menu">
+                <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#banner" title="Início">Início</a></li>
+                        <li><a href="#about-me" title="Sobre">Sobre</a></li>
+                        <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+                        <li><a href="#services" title="Serviços">Serviços</a></li>
+                        <li><a href="#contact" title="Contatos">Contato</a></li>
                     </ul>
                 </nav>
+                <img src="assets/images/menu-aberto.png" alt="Menu hamburger" class="menu-hamb" >
             </header>
 
             <div class="apresentation">
-                <h1>KLAUS MOROTTI <br> 
+                <h1>KLAUS MOROTTI <br>
                     <p>Desenvolvedor Web | UX/UI Designer</p>
                 </h1>
-                
 
                 <h2>A NECESSIDADE É A MÃE <br> <span>da inovação</span></h2>
 
                 <div class="contacts">
-                    <a href=""><img src="assets/images/github.png" alt="Logo Github"></a>
-                    <a href=""><img src="assets/images/linkedin.png" alt="Logo Github"></a>
-                    <a href=""><img src="assets/images/whatsapp.png" alt="Logo Github"></a>
+                    <a href="https://github.com/klausmorotti" target="_blank" title="Github"><img src="assets/images/github.png" alt="Logo Github"></a>
+                    <a href="https://www.linkedin.com/in/klaus-morotti-58119520a/" target="_blank" title="LinkedIn"><img src="assets/images/linkedin.png" alt="Logo LinkedIn"></a>
+                    <a href="https://web.whatsapp.com/send?phone=5518996928982" target="_blank" title="WhatsApp"><img src="assets/images/whatsapp.png" alt="Logo WhatsApp"></a>
                 </div>
             </div>
 
@@ -56,49 +55,52 @@
 
 
     <!--ÁREA SOBRE-->
-    <section class="area-about-me">
-        <h5>SOBRE</h5>
+    <section id="about-me">
+        <h5>Sobre</h5>
         <div class="container">
-            <article>
-                <div class="item resume">
+            <article class="container-grid">
+                <div class="resume item1">
                     <h1>Olá, <br> Sou Klaus Morotti</h1>
-                    <p>Desenvolvedor Web e UX/UI Designer entusiasta da programação e apaixonado por café. <img src="assets/images/coffee-cup.png" alt="Image Coffee"></p>
-                    <a href="" class="button">Entre em contato</a>
+                    <p>Desenvolvedor Web e UX/UI Designer entusiasta da programação e apaixonado por café. <img
+                            src="assets/images/coffee-cup.png" alt="Image Coffee"></p>
+                    <a href="#contact" class="button" title="Entre em contato">Entre em contato</a>
                 </div>
-                <div class="item photo">
-                    <img src="assets/images/klaus-photo.jpeg" alt="Photo">
+
+                <div class="profile-picture item2">
+                    <img src="assets/images/klaus-photo.jpeg" alt="Profile Picture">
                 </div>
-                <div class="item area-info">
+
+                <div class="informations item3">
                     <h6>Nome</h6>
-                    <div class="info">Klaus William Morotti de Azevedo</div>
+                    <p>Klaus William Morotti de Azevedo</p>
 
                     <h6>Idade</h6>
-                    <div class="info">18 Anos</div>
+                    <p>18 Anos</p>
 
                     <h6>Cargo</h6>
-                    <div class="info">Desenvolvedor Web e UX/UI Designer</div>
+                    <p>Desenvolvedor Web e UX/UI Designer</p>
 
                     <h6>Email</h6>
-                    <div class="info">klausazevedo123@gmail.com</div>
+                    <p>contato.klausmorotti@gmail.com</p>
 
                     <h6>Telefone</h6>
-                    <div class="info">(+55) 18 99692-8982</div>
+                    <p>(+55) 18 99692-8982</p>
 
                     <h6>Website</h6>
-                    <div class="info">klausmorotti.com</div>
+                    <p>klausmorotti.com</p>
 
                     <h6>Localização</h6>
-                    <div class="info">Araçatuba-SP</div>
+                    <p>Araçatuba-SP</p>
 
                     <h6>Contato</h6>
                     <div class="contacts">
-                        <a href=""><img src="assets/images/github.png" alt="Logo Github"></a>
-                        <a href=""><img src="assets/images/linkedin.png" alt="Logo Github"></a>
-                        <a href=""><img src="assets/images/whatsapp.png" alt="Logo Github"></a>
+                        <a href="https://github.com/klausmorotti" target="_blank" title="Github"><img src="assets/images/github.png" alt="Logo Github"></a>
+                        <a href="https://www.linkedin.com/in/klaus-morotti-58119520a/" target="_blank" title="LinkedIn"><img src="assets/images/linkedin.png" alt="Logo LinkedIn"></a>
+                        <a href="https://web.whatsapp.com/send?phone=5518996928982" target="_blank" title="WhatsApp"><img src="assets/images/whatsapp.png" alt="Logo WhatsApp"></a>
                     </div>
-
                 </div>
-                <div class="item about-me">
+
+                <div class="about item4">
                     <p>
                         Possuo habilidades com desenvolvimento front-end e design de interfaces, trabalho com as
                         tecnologias
@@ -110,15 +112,15 @@
                         minha
                         oportunidade no mercado de trabalho.
                     </p>
-                    <a href="" class="button">Entre em contato</a>
+                    <a href="#contact" class="button" title="Entre em contato">Entre em contato</a>
                 </div>
             </article>
         </div>
     </section>
 
     <!--ÁREA DIFERENCIAS-->
-    <section class="differentials">
-        <h5>DIFERENCIAIS</h5>
+    <section id="differentials">
+        <h5>Diferenciais</h5>
         <div class="container">
             <div class="differential">
                 <img src="assets/images/clean-coding.png" alt="Image differential">
@@ -128,7 +130,8 @@
             <div class="differential">
                 <img src="assets/images/seo.png" alt="Image differential">
                 <h4>SEO</h4>
-                <p>A experiência do usuário e planejamento visual do projeto para aplicações mais modernas e utilizáveis ao usuário final.</p>
+                <p>A experiência do usuário e planejamento visual do projeto para aplicações mais modernas e utilizáveis
+                    ao usuário final.</p>
             </div>
             <div class="differential">
                 <img src="assets/images/modern-design.png" alt="Image differential">
@@ -140,89 +143,108 @@
 
 
     <!--ÁREA PORTFOLIO (PROJETOS)-->
-    <section class="area-portfolio">
-        <h5>PORTFOLIO</h5>
+    <section id="portfolio">
+        <h5>Portfolio</h5>
         <h3>Alguns de meus projetos pessoais</h3>
         <div class="container">
-            <div class="portfolio">
-                <div class="item image-project">
-                    <img src="assets/images/pokedex.png" alt="Pokedex">
+            <div class="container-grid projects">
+
+
+                <div class="image-project item1">
+                    <img src="assets/images/pokedex.png" alt="Image Pokedex">
                 </div>
-                <div class="item desc-project left">
+                <div class="resume-project left item2">
                     <h2>Pokedéx</h2>
-                    <p>A Pokédex serve como um meio de identificação para o treinador Pokémon, em alguns torneios Pokémon a inscrição do participante só é feite se ele portar uma pokédex.</p>
-                    <a href="" class="button">Detalhes</a>
+                    <p>A Pokédex serve como um meio de identificação para o treinador Pokémon em alguns torneios Pokémon .</p>
+                    <a href="" class="button" title="Detalhes">Detalhes</a>
                 </div>
-                <div class="item desc-project right">
+
+
+                <div class="resume-project right item3">
                     <h2>Previsão do tempo</h2>
-                    <p>Página para consulta de previsão do tempo em diversos locais por todo o mundo com utilização de API.</p>
-                    <a href="" class="button">Detalhes</a>
+                    <p>Página para consulta de previsão do tempo em diversos locais por todo o mundo com utilização de
+                        API.</p>
+                    <a href="" class="button" title="Detalhes">Detalhes</a>
                 </div>
-                <div class="item image-project">
-                    <img src="assets/images/prevision.jpg" alt="Previsão do tempo">
+                <div class="image-project item4">
+                    <img src="assets/images/app-weather.jpg" alt="Image Weather forecast">
                 </div>
-                <div class="item image-project">
-                    <img src="assets/images/web-page.jpeg" alt="Página Web">
+
+
+                <div class="image-project item5">
+                    <img src="assets/images/web-page.png" alt="Image Web page">
                 </div>
-                <div class="item desc-project left">
+                <div class="resume-project left item6">
                     <h2>Página Web</h2>
-                    <p>Página web pessoal desenvolvida com objetivo de divulgar meu serviço como desenvolvedor e UX/UI Designer.</p>
-                    <a href="" class="button">Detalhes</a>
+                    <p>Página web pessoal desenvolvida com objetivo de divulgar meu serviço como desenvolvedor e UX/UI
+                        Designer.</p>
+                    <a href="" class="button" title="Detalhes">Detalhes</a>
                 </div>
-                <div class="item desc-project right">
+
+
+                <div class="resume-project right item7">
                     <h2>To do list</h2>
-                    <p>App para anotações de tarefas do dia a dia para melhor organização de sua rotina de forma simples.</p>
-                    <a href="" class="button">Detalhes</a>
+                    <p>App para anotações de tarefas do dia a dia para melhor organização de sua rotina de forma
+                        simples.</p>
+                    <a href="" class="button" title="Detalhes">Detalhes</a>
                 </div>
-                <div class="item image-project">
-                    <img src="assets/images/to-do-app.png" alt="To do list">
+                <div class="image-project item8">
+                    <img src="assets/images/to-do-app.png" alt="Image To do list">
                 </div>
-                <div class="item image-project">
+
+
+                <div class="image-project item9">
                     <img src="assets/images/formulary.jpg" alt="Image Formulary">
                 </div>
-                <div class="item desc-project left">
+                <div class="resume-project left item10">
                     <h2>Formulário</h2>
-                    <p>Formulário de cadastro com validação JS para acesso a determianda plataforma que desenvolvida para o cliente.</p>
-                    <a href="" class="button">Detalhes</a>
+                    <p>Formulário de cadastro com validação JS para acesso a determianda plataforma que desenvolvida
+                        para o cliente.</p>
+                    <a href="" class="button" title="Detalhes">Detalhes</a>
                 </div>
-                <div class="item desc-project right">
+
+
+                <div class="resume-project right item11">
                     <h2>Player de Música</h2>
-                    <p>Player de música desenvolvido para você obter suas melhores expeiências ouvindo suas músicas favoritas.</p>
-                    <a href="" class="button">Detalhes</a>
+                    <p>Player de música desenvolvido para você obter suas melhores expeiências ouvindo suas músicas
+                        favoritas.</p>
+                    <a href="" class="button" title="Detalhes">Detalhes</a>
                 </div>
-                <div class="item image-project">
-                    <img src="assets/images/app-music.jpg" alt="App Music">
+                <div class="image-project item12">
+                    <img src="assets/images/app-music.jpg" alt="Image App Music">
                 </div>
+
+
             </div>
         </div>
     </section>
 
 
     <!--ÁREA SERVIÇOS-->
-    <section class="services">
-        <h5>SERVIÇOS</h5>   
+    <section id="services">
+        <h5>Serviços</h5>
         <div class="container">
             <div class="service">
-                <img src="assets/images/web-developer.png" alt="Aplicação Web">
+                <img src="assets/images/web-developer.png" alt="Image Aplicação Web">
                 <h4>Aplicação Web</h4>
                 <p>Desde uma simples landing page até sites pessoais, comerciais e lojas virtuais.</p>
             </div>
             <div class="service">
-                <img src="assets/images/ux-ui-design.png" alt="UX/UI Designer">
+                <img src="assets/images/ux-ui-design.png" alt="Image UX/UI Designer">
                 <h4>UX/UI Design</h4>
                 <p>A experiência do usuário e planejamento visual do projeto para aplicações mais modernas e utilizáveis ao usuário final.</p>
             </div>
             <div class="service">
-                <img src="assets/images/design-grafico.png" alt="Design Gráfico">
+                <img src="assets/images/design-grafico.png" alt="Image Design Gráfico">
                 <h4>Design Gráfico</h4>
                 <p>Uma arte digital faz toda diferença para sua interface. Logos, convites, banners.</p>
             </div>
         </div>
     </section>
 
-
-    <section class="contact">
-        <h5>CONTATO</h5>
+    <!--ÁREA CONTATO-->
+    <section id="contact">
+        <h5>Contato</h5>
         <div class="container">
             <h3>Fale comigo</h3>
 
@@ -231,38 +253,39 @@
                 <input type="email" name="email" placeholder="Email *"> <br>
                 <input type="text" name="subject" placeholder="Assunto"> <br>
                 <textarea name="message" placeholder="Mensagem *"></textarea>
-                <a href="" class="button">Enviar<img src="assets/images/send.png" alt="Image Send"></a>
+                <a href="" class="button" title="Enviar">Enviar<img src="assets/images/send.png" alt="Image Send"></a>
             </form>
         </div>
+
         <div class="more-contacts">
             <div class="contact">
                 <img src="assets/images/map.png" alt="Image Map">
-                <h6>LOCALIZAÇÃO</h6>
+                <h6>Localização</h6>
                 <p>Araçatuba <br> São paulo <br> Brasil</p>
             </div>
             <div class="contact">
-                <img src="assets/images/email.png" alt="Image Map">
-                <h6>E-MAIL</h6>
-                <p>klausazevedo123@gmail.com</p>
+                <img src="assets/images/email.png" alt="Image Email">
+                <h6>E-mail</h6>
+                <p>contato.klausmorotti@gmail.com</p>
             </div>
             <div class="contact">
-                <img src="assets/images/phone.png" alt="Image Map">
-                <h6>TELEFONE</h6>
-                <p>(+55) 18 99692-8982</p>
+                <img src="assets/images/phone.png" alt="Image Phone">
+                <h6>Telefone</h6>
+                <p>( +55 ) 18 99692-8982</p>
             </div>
         </div>
     </section>
 
-
+    <!--ÁREA FOOTER-->
     <footer>
         <div class="copyright">
-            <img src="assets/images/copyright.png" alt="Copyright">
+            <img src="assets/images/copyright.png" alt="Image Copyright">
             <p>Todos os direitos reservados - Klaus Morotti</p>
         </div>
         <div class="contacts">
-            <a href=""><img src="assets/images/github.png" alt="Logo Github"></a>
-            <a href=""><img src="assets/images/linkedin.png" alt="Logo Github"></a>
-            <a href=""><img src="assets/images/whatsapp.png" alt="Logo Github"></a>
+            <a href="https://github.com/klausmorotti" target="_blank" title="Github"><img src="assets/images/github.png" alt="Logo Github"></a>
+            <a href="https://www.linkedin.com/in/klaus-morotti-58119520a/" target="_blank" title="LinkedIn"><img src="assets/images/linkedin.png" alt="Logo LinkedIn"></a>
+            <a href="https://web.whatsapp.com/send?phone=5518996928982" target="_blank" title="WhatsApp"><img src="assets/images/whatsapp.png" alt="Logo WhatsApp"></a>
         </div>
     </footer>
 

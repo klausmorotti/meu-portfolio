@@ -4,17 +4,18 @@ APRENDIZADOS PROJETO:
 - usar variáveis de armazenameneto css //
 - padronizar tamanhos de fontes //
 - classes reutilizaveis //
-- Clean code
-- atributo title no link a
-- tags semânticas
+- Clean code //
+- atributo title no link a //
+- tags semânticas //
 - Responsivizar
-- Criar email profissional e alterar no projeto
+- adicionar menu hamburguer
+- Criar email profissional e alterar no projeto //
 - Ao clicar nos campos do formulário, ficar borda azul 
 - Ao abrir a página, adicionar efeito sutil para aparecer a estrutura
 - efeito parallax de rolagem, banner ficar fixo
 - Copiar efeitos de aparição do site B7web
-- Criar validação JS no formulário
 - Trocar foto
+- Criar validação JS no formulário
 
 
 
