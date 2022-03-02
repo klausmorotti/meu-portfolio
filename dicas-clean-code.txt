@@ -11,10 +11,10 @@ APRENDIZADOS PROJETO:
 - adicionar menu hamburguer //
 - Criar email profissional e alterar no projeto //
 - Ao abrir a página, adicionar efeito sutil para aparecer a estrutura //
-- abrir menu e fechar 
-- scroll suave
+- abrir menu e fechar //
+- scroll suave // 
+- efeito parallax de rolagem, banner ficar fixo 
 - Ao clicar nos campos do formulário, ficar borda azul 
-- efeito parallax de rolagem, banner ficar fixo
 - Copiar efeitos de aparição do site B7web
 - Trocar foto
 - Criar validação JS no formulário

@@ -120,6 +120,7 @@ section {
 
 /* BANNER */
 #banner {
+    width:100%;
     height:100vh;
     background-image:url('../images/bg-code.jpg');
     background-size:cover;
@@ -387,6 +388,10 @@ article .about p {
     font-size: var(--h5-font-size);
     font-family:'Lato';
 }
+#contact .container form .field-blue {
+    transition:all ease 0.5s;
+    border-bottom:1px solid var(--color-title-blue);
+}
 #contact textarea {
     resize:none;
     height:250px;
@@ -466,7 +471,7 @@ footer .contacts img {
     /* Header */
     header nav {
         display:none;
-        transition:all ease 1s;
+        transition:all ease 0.5s;
         opacity:0;
         background-color:rgba(0, 0, 0, 0.8);
         position:absolute;
@@ -484,10 +489,12 @@ footer .contacts img {
         padding:20px 10px;
     }
     header nav a {
+        color:  var(--color-title-blue);
         letter-spacing:1px;
         font-size: var(--p-font-size);
     }
     header .menu-hamb {
+        transition:all ease 0.5s;
         display:block;
     }
     /* About me */
@@ -680,6 +687,7 @@ footer .contacts img {
         grid-area:item2;
     }
     #about-me .container .informations.item3 {
+        
         grid-area:item3;
     }
     #about-me .container .informations.item3 h6 {
@@ -855,6 +863,9 @@ footer .contacts img {
     #contact .container form textarea::placeholder {
         font-size: var(--h6-font-size);
     }
+    #contact .container form a {
+        width:100%;
+    }
 
     /* Footer */
     footer .copyright img {
@@ -884,4 +895,14 @@ footer .contacts img {
     .banner-opacity .apresentation h2 span {
         font-size: var(--h3-font-size);
     }
+
+    #about-me .container .informations.item3 h6,
+    #about-me .container .informations.item3 p {
+        font-size:14px;
+        max-width:150px;
+    }
+    article .informations img {
+        max-width:20px;
+    }
+     
 }
