@@ -320,6 +320,22 @@ article .about p {
     font-size: var(--h5-font-size);
     line-height:50px;
 }
+.resume-project .area-btns {
+    display:flex;
+}
+.resume-project .button:first-child {
+    margin-right:10px;
+}
+.resume-project .button:last-child {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:10px;
+}
+.resume-project .button img {
+    margin-left:10px;
+    max-width:20px;
+}
 .resume-project.right {
     text-align:right;
 }
@@ -689,6 +705,16 @@ footer .contacts img {
     .more-contacts .contact p {
         font-size: var(--btn-font-size);
     }
+}
+
+@media only screen and ( min-width:1366px ) {
+    header,
+    .apresentation,
+    section {
+        max-width:1366px;
+        margin:auto;
+    }
+
 }
 
 @media only screen and ( max-width:768px ) {

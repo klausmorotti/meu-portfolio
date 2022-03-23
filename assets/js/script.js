@@ -6,13 +6,12 @@ let smoothEffect = () => {
     }, 200);
 }
 
-// CANCELANDO EVENTO DOS BOTÕES 
+// CANCELANDO EVENTO DOS BOTÕES AINDA NÃO UTILIZÁVEIS 
 document.querySelectorAll('#portfolio .button, #contact .button').forEach((item) => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
     })
 })
-
 
 
 

@@ -13,11 +13,18 @@ APRENDIZADOS PROJETO:
 - Ao abrir a página, adicionar efeito sutil para aparecer a estrutura //
 - abrir menu e fechar //
 - scroll suave // 
+- Tamanho maximo da interface para nao ficar muito pequeno em telas grandes //
+- Botões de ver o codigo do projeto no Github alem tambem do de ver detalhes // 
+- Corrigir bug do menu
+- Adicionar links dos projetoss
 - efeito parallax de rolagem, banner ficar fixo 
 - Ao clicar nos campos do formulário, ficar borda azul 
-- Copiar efeitos de aparição do site B7web
+- Copiar efeitos de aparição do site B7web, yago portfolio
+- botao voltar ao topo
+- tema claro
 - Trocar foto
 - Criar validação JS no formulário
+- Clean code
 
 
 
