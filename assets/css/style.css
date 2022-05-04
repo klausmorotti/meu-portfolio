@@ -37,6 +37,7 @@
     border:0;
 }
 
+
 body {
     transition:all ease 2.5s;
     opacity:0;
@@ -117,6 +118,58 @@ section {
     border:1px solid var(--color-title-blue);
     transition:all ease 0.5s;
 }
+.menuOpened {
+    display:flex;
+}
+
+/* Modal projetos */
+.modalProjects {
+    z-index:-1;
+    opacity:0;
+    padding:20px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(17, 17, 17, 0.8);
+}
+.modalProjects .modal {
+    padding:20px;
+    width:700px;
+    height:500px;
+    background:rgba(17, 17, 17, 0.8);
+    border-radius:20px;
+    border:2px solid var(--color-title-blue);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.modalProjects .modal h1 {
+    margin-top:30px;
+    text-align:center;
+    font-size:40px;
+}
+.modalProjects .modal p {
+    margin-top:40px;
+    font-size:20px;
+}
+.modalProjects .modal a {
+    text-align:center;
+    width:100px;
+    background-color: var(--color-title-blue);
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:10px;
+    margin-top:20px;
+}
+.modalProjects .modal img {
+    max-width:150px;
+}
 
 /* BANNER */
 #banner {
@@ -164,7 +217,7 @@ header nav li {
     padding:10px;
 }
 header nav a {
-    letter-spacing:1px;
+    letter-spacing:2px;
     font-size: var(--p-font-size);
 }
 header nav a:hover {
@@ -208,7 +261,6 @@ article .resume,
 article .about {
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
 }
 article .resume h1 {
     font-weight: var(--weight-bold);
@@ -225,12 +277,16 @@ article .resume img {
 }
 /* Profile picture */
 article .profile-picture {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     border-radius:30px;
 }
 article .profile-picture img {
-    border-radius:50px;
-    max-width:100%;
-    height:100%;
+    border-radius:30px;
+    max-width:500px;
+    height:600px;
+    border-radius:30px;
 }
 /* Informations */
 article .informations {
@@ -491,10 +547,9 @@ footer .contacts img {
     header nav {
         display:none;
         transition:all ease 0.5s;
-        opacity:0;
         background-color:rgba(0, 0, 0, 0.8);
         position:absolute;
-        top:10px;
+        top:0;
         right:0;
         width:30vw;
     }
@@ -505,13 +560,13 @@ footer .contacts img {
     }
     header nav li {
         margin:0 10px;
-        padding:20px 10px;
+        padding:15px 10px;
     }
     header nav ul li:first-child {
         display:block;
     }
     header nav li img {
-        max-width:30px;
+        max-width:25px;
     }
     header nav a {
         color:  var(--color-title-blue);
@@ -534,6 +589,11 @@ footer .contacts img {
     }
     article .resume img {
         max-width: 20px;
+    }
+    article .profile-picture img {
+        max-width:300px;
+        height:auto;
+        border-radius:50%;
     }
     article .about p {
         margin-bottom:50px;
@@ -558,6 +618,18 @@ footer .contacts img {
     .resume-project p {
         font-size: var(--p-font-size);
         line-height:40px;
+    }
+    .resume-project .area-btns {
+        flex-direction:column;
+    }
+    .resume-project .button {
+        margin:0;
+    }
+    .resume-project .button:last-child {
+        margin-left:0;
+    }
+    .resume-project .button:first-child {
+        margin-bottom:15px;
     }
     /* Services */
     .container .service img {
@@ -890,6 +962,9 @@ footer .contacts img {
     #portfolio .resume-project p {
         font-size: var(--h6-font-size);
     }
+    article .profile-picture img {
+        width:200px;
+    }
 
     /* Services */
     #services .container .service {
@@ -927,6 +1002,23 @@ footer .contacts img {
 }
 
 @media only screen and ( max-width:425px ) {
+    /* Header */
+    header nav {
+        width:100%;
+        background-color:rgba(0, 0, 0, 0.9);
+    }
+    header nav li {
+        display:flex;
+        justify-content:center;
+    }
+    header nav li a {
+        letter-spacing:5px;
+    }
+    /* Apresentation */
+    article .profile-picture img {
+        width:150px;
+    }
+
     /* Banner */
     .banner-opacity .apresentation h1 {
         font-size:30px;

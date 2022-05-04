@@ -7,35 +7,53 @@ let smoothEffect = () => {
 }
 
 // CANCELANDO EVENTO DOS BOTÕES AINDA NÃO UTILIZÁVEIS 
-document.querySelectorAll('#portfolio .button, #contact .button').forEach((item) => {
-    item.addEventListener('click', (e) => {
-        e.preventDefault();
-    })
+document.querySelector('#contact .button').addEventListener('click', (e) => {
+    e.preventDefault();
 })
 
+
+// Direcionando a página ou mostrando modal de projeto em construção
+let ctaProjects = document.querySelectorAll('#portfolio .button');
+ctaProjects.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        let link = btn.getAttribute('href');
+
+        if( link == '') {
+            e.preventDefault();
+
+            let modal = document.querySelector('.modalProjects');
+            modal.style.opacity = 1;
+            modal.style.zIndex = 99;
+            document.documentElement.style.overflow = 'hidden';
+
+            let btnModal = document.querySelector('.modalProjects a');
+            btnModal.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.style.opacity = 0;
+                modal.style.zIndex = -1;
+                document.documentElement.style.overflow = 'auto';
+            })
+        }
+
+    });
+})
 
 
 // FUNÇÃO MENU MOBILE
-// Abrir menu mobile
-document.querySelector('.menu-hamb').addEventListener('click', () => {
-    document.querySelector('.menu-hamb').style.opacity = 0;
-    setTimeout(() => {
-        document.querySelector('.menu-hamb').style.display = 'none';
-        document.querySelector('header nav').style.opacity = 1;
-    }, 200)
-    document.querySelector('header nav').style.display = 'block';
-})
-// Fechar menu mobile
-document.querySelectorAll('nav a').forEach((item) => {
-    item.addEventListener('click', () => {
-        document.querySelector('header nav').style.opacity = 0;
-        setTimeout(() => {
-            document.querySelector('header nav').style.display = 'none';
-            document.querySelector('.menu-hamb').style.display = 'block';
-        }, 200)
-        document.querySelector('.menu-hamb').style.opacity = 1;
+let menuNavigation = document.querySelector('header nav');
+let menuMobile = document.querySelector('header .menu-hamb');
+
+let buttons = document.querySelectorAll('header .menu-hamb, header nav li:first-child');
+buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        if( menuNavigation.classList.contains('menuOpened') ) {
+            menuNavigation.classList.remove('menuOpened');
+        } else {
+            menuNavigation.classList.add('menuOpened');
+        }
     })
 })
+
 
 
 // SCROLL SUAVE
