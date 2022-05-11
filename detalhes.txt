@@ -20,7 +20,7 @@ APRENDIZADOS PROJETO:
 - Caso projeto imcompleto, mostrar modal de projeto em andamento //
 - efeito parallax de rolagem, banner ficar fixo 
 - Ao clicar nos campos do formulário, ficar borda azul 
-- Copiar efeitos de aparição do site B7web, yago portfolio
+- Copiar efeitos de aparição do site B7web, yago portfolio //
 - botao voltar ao topo
 - tema claro
 - Trocar foto //

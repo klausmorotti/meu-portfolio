@@ -6,6 +6,7 @@ let smoothEffect = () => {
     }, 200);
 }
 
+
 // CANCELANDO EVENTO DOS BOTÕES AINDA NÃO UTILIZÁVEIS 
 document.querySelector('#contact .button').addEventListener('click', (e) => {
     e.preventDefault();
@@ -43,7 +44,7 @@ ctaProjects.forEach((btn) => {
 let menuNavigation = document.querySelector('header nav');
 let menuMobile = document.querySelector('header .menu-hamb');
 
-let buttons = document.querySelectorAll('header .menu-hamb, header nav li:first-child');
+let buttons = document.querySelectorAll('header .menu-hamb, header nav a:first-child');
 buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
         if( menuNavigation.classList.contains('menuOpened') ) {
@@ -81,6 +82,7 @@ function scrollArea(scrollPosition) {
     })
     */
     smoothScrollTo(0, scrollPosition, 1000);
+    menuNavigation.classList.remove('menuOpened');
 }
 /**
  * Smooth scroll animation
