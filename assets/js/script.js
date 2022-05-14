@@ -19,7 +19,7 @@ ctaProjects.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         let link = btn.getAttribute('href');
 
-        if( link == '') {
+        if (link == '') {
             e.preventDefault();
 
             let modal = document.querySelector('.modalProjects');
@@ -30,8 +30,23 @@ ctaProjects.forEach((btn) => {
             let btnModal = document.querySelector('.modalProjects a');
             btnModal.addEventListener('click', (e) => {
                 e.preventDefault();
-                modal.style.opacity = 0;
-                modal.style.zIndex = -1;
+                document.querySelector('.content').style.opacity = 0;
+                document.querySelector('.content').style.zIndex = -1;
+                let showCoffee = setInterval(() => {
+                    document.querySelector('.areaCoffee').style.opacity = 1;
+                    document.querySelector('.areaCoffee').style.zIndex = 99;
+                }, 100)
+                setTimeout(() => {
+                    clearInterval(showCoffee);
+                    modal.style.opacity = 0;
+                    modal.style.zIndex = -1;
+                    setTimeout(() => {
+                        document.querySelector('.content').style.opacity = 1;
+                        document.querySelector('.content').style.zIndex = 99;
+                    }, 500)
+                    document.querySelector('.areaCoffee').style.opacity = 0;
+                    document.querySelector('.areaCoffee').style.zIndex = -1;
+                }, 3000)
                 document.documentElement.style.overflow = 'auto';
             })
         }
@@ -39,21 +54,61 @@ ctaProjects.forEach((btn) => {
     });
 })
 
+// Botão voltar ao topo
+let btnGoTop = document.querySelector('.goTop');
+window.addEventListener('scroll', () => {
+    if (window.scrollY === 0) {
+        btnGoTop.style.display = 'none';
+    } else {
+        btnGoTop.style.display = 'flex';
+    }
+})
+
+btnGoTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+})
+
 
 // FUNÇÃO MENU MOBILE
 let menuNavigation = document.querySelector('header nav');
 let menuMobile = document.querySelector('header .menu-hamb');
 
-let buttons = document.querySelectorAll('header .menu-hamb, header nav a:first-child');
+let buttons = document.querySelectorAll('header .menu-hamb, header .closeMenu .x');
 buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
-        if( menuNavigation.classList.contains('menuOpened') ) {
+        if (menuNavigation.classList.contains('menuOpened')) {
             menuNavigation.classList.remove('menuOpened');
         } else {
             menuNavigation.classList.add('menuOpened');
         }
     })
 })
+
+/*
+TROCA DE TEMA
+let themes = document.querySelector('.themes');
+let ballTheme = document.querySelector('.themes .ballTheme');
+themes.addEventListener('click', () => {
+    if( window.document.body.classList.contains('dark') ) {
+        window.document.body.classList.remove('dark');
+        window.document.body.classList.add('light');
+        document.querySelector('.ballTheme').style.transform = 'translate(34px)';
+        ballTheme.style.backgroundColor = 'var(--bg-page)';
+        themes.style.backgroundColor = 'var(--color-fonts)';
+    } else {
+        window.document.body.classList.remove('light');
+        window.document.body.classList.add('dark');
+        document.querySelector('.ballTheme').style.transform = 'translate(0)';
+        ballTheme.style.backgroundColor = 'var(--color-fonts)';
+        themes.style.backgroundColor = 'var(--bg-page)';
+    }
+})
+*/
+
 
 
 
@@ -83,6 +138,7 @@ function scrollArea(scrollPosition) {
     */
     smoothScrollTo(0, scrollPosition, 1000);
     menuNavigation.classList.remove('menuOpened');
+
 }
 /**
  * Smooth scroll animation
