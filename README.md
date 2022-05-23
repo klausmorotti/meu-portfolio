@@ -8,7 +8,7 @@ A página contém conta com áreas como:
 
 * Informações pessoais 
 * Tecnologias que trabalho
-* Tipos de servições prestados
+* Tipos de serviços prestados
 * Diferenciais
 * Projetos já realizados 
 * Formulário para contato
