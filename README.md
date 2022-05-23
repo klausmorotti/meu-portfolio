@@ -50,4 +50,4 @@ O usuário conseguirá também:
 
 ## 📝 Licença
 
-Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/projeto-audax/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
+Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/meu-portfolio/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
