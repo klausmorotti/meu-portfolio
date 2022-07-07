@@ -59,4 +59,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/meu-portfolio/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
 
 
+<<<<<<< HEAD
 <a href="#top">Volte para o topo</a>
+=======
+<a href="#top">Volte para o topo</a>
+>>>>>>> 20f5dac9139559a9a5273fed97961a82a31146e4
