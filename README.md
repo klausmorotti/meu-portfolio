@@ -28,6 +28,7 @@ O site tem no total 1 página, sendo ela
 :heavy_check_mark: Criação do recurso de modal de aviso para caso o projeto ainda não tenha sido concluído. <br>
 :heavy_check_mark: Adicionando responsividade à página. <br>
 :heavy_check_mark: Adicionando recursos JavaScript: Scroll suave, animações, botão voltar ao topo. <br>
+:heavy_check_mark: Projeto finalizado.
 
 ## 🚀 Tecnologias ##
 
