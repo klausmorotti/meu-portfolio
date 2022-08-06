@@ -1,6 +1,6 @@
 <h1 align="center">PORTFOLIO PESSOAL</h1>
 
-<img src="assets/images/portfolio-gif.gif" alt="Video Projeto">
+<img src="assets/images/portfolio-gif.gif" alt="Video Projeto" width="100%">
 
 > 🔎 Projeto de Portfolio Pessoal para divulgar meu serviço como Desenvolvedor Front-End. <br>
 🗔 Confira a aplicação: https://klausmorotti.github.io/meu-portfolio/ <br>
